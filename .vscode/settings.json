@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "lvgl.h": "c",
+        "lv_drv_conf.h": "c",
+        "lv_theme_material.h": "c",
+        "fpga_if.h": "c",
+        "peripheral.h": "c",
+        "systick.h": "c",
+        "gd32f4xx.h": "c",
+        "queue.h": "c",
+        "json-builder.h": "c",
+        "json.h": "c"
+    },
+    "C_Cpp.dimInactiveRegions": false
+}
