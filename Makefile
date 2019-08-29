@@ -148,7 +148,7 @@ $(BUILD_DIR):
 clean:
 	-rm -fR .dep $(BUILD_DIR)
 flash: all
-	$()openocd -f ./openocd_gdlink.cfg -c init -c "flash protect 0 0 last off; program {build\gd32vf103.elf} verify; resume 0x20000000; exit;"
+	$()openocd -f ./openocd_gdlink.cfg -c init -c "flash protect 0 0 last off; program {build\gd32vf103.elf} verify; mww 0xe004200c 0x4b5a6978; mww 0xe0042008 0x01; resume; exit;"
 
 #######################################
 # dependencies
